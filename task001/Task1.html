@@ -20,10 +20,11 @@
         .login-box{
             width: 400px;
             position: absolute;
+            padding-top: 30px;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);/*线性平移*/
-            background-color: rgba(255,255,255,.8);/*rgba调整透明度，<1且省略小数点前的0*/
+            background-color: rgba(255,255,255,.8);
         }
         .header{
             font-size: 150%;
@@ -40,13 +41,7 @@
         }
         .form-group{
             text-align: center;
-
             margin-bottom: 20px;
-        }
-        label{
-            display: inline-block;
-            margin-right: 0;
-            transform: translate(0,-50%);
         }
         input{
             width: 250px;
@@ -57,21 +52,36 @@
             border-radius: 4px;
         }
         #remember{
-            width: 30px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
         }
         button{
-            width: 150px;
+            width: 120px;
             height: 35px;
             background-color:blue;
             font-size: 22px;
             border: none;
             color: #fff;
             cursor: pointer;
+            border-radius: 6px;
         }
         button:hover{
             background-color: rgba(0,0,255,0.8);
             font-size: 125%;
+        }
+        #register{
+            width: 80px;
+            height: 30px;
+            background-color:blue;
+            font-size: 15px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #register:hover{
+            background-color: rgba(0,0,255,0.8);
+            font-size: 120%;
         }
         .login-tail{
             text-align: center;
@@ -83,7 +93,11 @@
             font-size: 90%;
 
         }
-
+        #designer{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
         a{
             color:blue ;
             display: inline-block;
@@ -115,10 +129,10 @@
         </form>
     </div>
     <div class="login-tail">
-        <p id="1">not a registered user yet?<button type="submit">Sign UP</button> </p>
+        <p id="question">not a registered user yet?<button id="register" type="submit">Sign UP</button> </p>
 
     </div>
 </div>
-    <p id="2">by notMyself</p>
+    <p id="designer">Designed by notMyself</p>
 </body>
 </html>
