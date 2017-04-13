@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-image: url('task1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-box{
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);/*线性平移*/
+            background-color: rgba(255,255,255,.8);/*rgba调整透明度，<1且省略小数点前的0*/
+        }
+        .header{
+            font-size: 150%;
+            color: white;
+            text-align: center;
+            position: relative;
+            top:160px;
+        }
+        h2{
+            color: #3b5e88
+        }
+        .login-body{
+            padding: 20px
+        }
+        .form-group{
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+        label{
+            display: inline-block;
+            margin-right: 0;
+            transform: translate(0,-50%);
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            font-size: 16px;
+            text-indent: 1em;
+            border: 1px solid #f3f3f3;
+            border-radius: 4px;
+        }
+        #remember{
+            width: 30px;
+            height: 10px;
+        }
+        button{
+            width: 150px;
+            height: 35px;
+            background-color:blue;
+            font-size: 22px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(0,0,255,0.8);
+            font-size: 125%;
+        }
+        .login-tail{
+            text-align: center;
+            padding: 10px;
+            border-top: 5px solid #fff;
+        }
+        p{
+            color: dimgray;
+            font-size: 90%;
+
+        }
+
+        a{
+            color:blue ;
+            display: inline-block;
+            text-align: center;
+            padding-left: 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h2>Welcome back!</h2>
+</div>
+<div class="login-box">
+    <div class="login-body">
+        <form>
+            <div class="form-group">
+                <label></label>
+                <input type="text" name= "username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <label></label>
+                <input type="password" name ="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <input id="remember" type="checkbox">remember me
+                <button type="submit">Sign in</button>
+            </div>
+            <a href="back.jpg" title="Retrieve password">Forget password？</a>
+        </form>
+    </div>
+    <div class="login-tail">
+        <p id="1">not a registered user yet?<button type="submit">Sign UP</button> </p>
+
+    </div>
+</div>
+    <p id="2">by notMyself</p>
+</body>
+</html>
