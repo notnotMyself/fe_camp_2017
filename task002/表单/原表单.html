@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHARLS注册</title>
+</head>
+<body>
+    <div class="register-main" id="register-main-container" style="height: 660px; top: 25px;">
+    <form id="register-form-iwer" action="http://home.charls.org/Register/submit/iwer">
+        <h5>新调查员注册</h5>
+        <!-- project and role -->
+        <div class="mdl-textfield">
+            <ul class="mdl-list">
+                <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">选择项目：</span>
+                </li>
+                <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-disabled is-upgraded" data-upgraded=",MaterialRadio,MaterialRipple">
+                  <input type="radio" class="mdl-radio__button" name="project" value="a" disabled="disabled">
+                  <span class="mdl-radio__label">生命历程调查（北京）<small>已截止</small></span>
+                  <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+            </span>
+                </li>
+                <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-upgraded" data-upgraded=",MaterialRadio,MaterialRipple">
+                  <input type="radio" class="mdl-radio__button" name="project" value="b" necessary="">
+                  <span class="mdl-radio__label">生命历程调查（天津）<small><a href="http://home.charls.org/public/download/tianjinhuitu.docx" target="_blank">点击了解</a></small></span>
+                  <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+                <!-- <a href="http://mp.weixin.qq.com/s/AkYkkratmVvmTTMEgflZQg" target="_blank">点击了解</a> -->
+            </span>
+                </li>
+                <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-upgraded" data-upgraded=",MaterialRadio,MaterialRipple">
+                  <input type="radio" class="mdl-radio__button" name="project" value="c">
+                  <span class="mdl-radio__label">认知评估调查（全国）<small><a href="http://mp.weixin.qq.com/s/bMB-oXDRqypt0aiPS6IGGw" target="_blank">点击了解</a></small></span>
+                  <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+            </span>
+                </li>
+            </ul>
+            <span class="mdl-textfield__error">请选择一个报名项目</span>
+        </div>
+        <p class="mdl-textfield"><a href="" target="_blank">点击了解项目与角色</a>&nbsp;：</p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <select class="mdl-textfield__input" name="project" necessary>
+            <option value=""></option>
+            <option value="a">生命历程调查（北京）</option>
+            <option value="b">生命历程调查（天津）</option>
+          </select>
+          <label class="mdl-textfield__label">选择项目</label>
+          <span class="mdl-textfield__error">请选择一个报名项目</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <select class="mdl-textfield__input" name="role" necessary="">
+                <option value=""></option>
+                <option value="1">队长</option>
+                <option value="2">绘图员</option>
+                <option value="3">访员</option>
+                <option value="4">核查员</option>
+            </select>
+            <label class="mdl-textfield__label">选择角色</label>
+            <span class="mdl-textfield__error">请选择一个队伍角色</span>
+        </div>
+        <!-- email -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="email" name="email" necessary="">
+            <label class="mdl-textfield__label">邮箱帐号</label>
+            <span class="mdl-textfield__error">请填写正确的邮箱地址</span>
+        </div>
+        <!-- password -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="password" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^(.{6,20})$" name="password" necessary="">
+            <label class="mdl-textfield__label">密码</label>
+            <span class="mdl-textfield__error">密码长度要求在6~20位，需包含字母和数字</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="password" name="password2" necessary="">
+            <label class="mdl-textfield__label">重复密码</label>
+            <span class="mdl-textfield__error">两次填写的密码不一致</span>
+        </div>
+        <!-- name -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="text" name="name" necessary="">
+            <label class="mdl-textfield__label">姓名</label>
+            <span class="mdl-textfield__error">请填写您的姓名</span>
+        </div>
+        <!-- photo -->
+        <div class="mdl-textfield">
+            <div class="input-photo-box">
+                <span>点击上传一寸照(&lt;1MB)</span>
+                <input name="photo" type="hidden" necessary="">
+                <input type="file" accept="image/*">
+            </div>
+        </div>
+        <!-- gender -->
+        <div class="mdl-textfield">
+            <label class="mdl-radio">性别</label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-upgraded" data-upgraded=",MaterialRadio,MaterialRipple">
+                <input type="radio" name="gender" class="mdl-radio__button" value="男" necessary="">
+                <span class="mdl-radio__label">男</span>
+                <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events is-upgraded" data-upgraded=",MaterialRadio,MaterialRipple">
+                <input type="radio" name="gender" class="mdl-radio__button" value="女">
+                <span class="mdl-radio__label">女</span>
+                <span class="mdl-radio__outer-circle"></span><span class="mdl-radio__inner-circle"></span><span class="mdl-radio__ripple-container mdl-js-ripple-effect mdl-ripple--center" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></label>
+            <span class="mdl-textfield__error">请选择性别</span>
+        </div>
+        <!-- biethday -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="date" pattern="[12][09]\d\d-[01]\d-[0-3]\d" name="birth" necessary="">
+            <label class="mdl-textfield__label">生日</label>
+            <span class="mdl-textfield__error">填写格式：1991-01-01</span>
+        </div>
+        <!-- phone -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="tel" pattern="\d{11}" name="phone" necessary="">
+            <label class="mdl-textfield__label">手机号码</label>
+            <span class="mdl-textfield__error">请填写正确的手机号码</span>
+        </div>
+        <!-- school -->
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" data-upgraded=",MaterialTextfield">
+            <select class="mdl-textfield__input" name="schoolpre" necessary="">
+                <option value=""></option>
+                <option value="已毕业/工作">已毕业/工作</option>
+                <option value="北京大学本部">北京大学本部</option>
+                <option value="北京大学医学部">北京大学医学部</option>
+                <option value="天津大学">天津大学</option>
+                <option value="暨南大学">暨南大学</option>
+                <option value="其它高校">其它高校</option>
+            </select>
+            <label class="mdl-textfield__label">单位/学校</label>
+            <span class="mdl-textfield__error">请选择目前所在的单位/学校</span>
+        </div>
+        <div id="input-school-container" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded" style="display:none;" data-upgraded=",MaterialTextfield">
+            <input class="mdl-textfield__input" type="text" name="school" necessary="">
+            <label class="mdl-textfield__label">学校名称</label>
+            <span class="mdl-textfield__error">请填写您目前所在的学校名称</span>
+        </div>
+        <!-- submit -->
+        <p class="submit-box">
+            <input type="submit" class="submit-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="立即加入我们" data-upgraded=",MaterialButton">
+        </p>
+    </form>
+</body>
+</html>

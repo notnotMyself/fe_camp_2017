@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找茬</title>
+</head>
+<body>
+<article>
+    <h3>选择任意一个线上页面（各大公司均可），指出 HTML 代码中的不合理之处。</h3>
+    <p><a href="http://weibo.com/" target="_blank">新浪微博首页</a></p>
+    <p>1.一个img标签必须具有一个alt属性，除了一定的条件下</p>
+    <pre>如源代码<code>line 720: <div class="footerRight r"><img src="http://ui.sina.com/pub/weibo/0522/footerPic.png"></div></code></pre>
+    <p>2.重复的属性target</p>
+    <pre><code>line 114:<div class="face"><a href="http://weibo.com/yamibuy" target="_blank" title="美国亚米网的新浪微博" target="_blank"><img src="http://tva1.sinaimg.cn/crop.0.0.180.180.50/b7fc1b1fjw8f8sdpx6f2zj2050050wef.jpg" width="62" height="62" alt="美国亚米网的新浪微博"></a></div></code> </pre>
+</article>
+</body>
+</html>
