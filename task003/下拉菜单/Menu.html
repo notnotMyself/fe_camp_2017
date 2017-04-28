@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style type="text/css">
+        ul,li{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        .menu{
+            width:600px;
+            margin:100px auto;
+        }
+        .menu .nav-menu{
+            width:200px;
+            float:left;
+            padding:10px 0;
+            text-align: center;
+            font-size: 20px;
+            background-color: #01315a;
+            color:white;
+            cursor: pointer;
+        }
+        .menu .nav-menu .nav-child{
+            width:200px;
+            display: none;
+        }
+        .menu .nav-menu .nav-child .nav-child-content{
+            width:200px;
+            display: block;
+            padding:10px 0;
+        }
+        .menu .nav-menu .nav-child .nav-child-content:first-child{
+            margin-top:10px;
+        }
+        .menu .nav-menu:hover .nav-child{
+            display: block;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="nav-menu"><a href="http://baike.baidu.com/item/%E9%87%91%E5%B7%9E%E5%8B%87%E5%A3%AB%E9%98%9F">Warriors</a>
+            <ul class="nav-child">
+                <li class="nav-child-content">Durant</li>
+                <li class="nav-child-content">Curry</li>
+                <li class="nav-child-content">Thompson</li>
+            </ul>
+        </li>
+        <li class="nav-menu"><a href="http://baike.baidu.com/item/%E5%9C%A3%E5%AE%89%E4%B8%9C%E5%B0%BC%E5%A5%A5%E9%A9%AC%E5%88%BA%E9%98%9F"> Spurs</a>
+            <ul class="nav-child">
+                <li class="nav-child-content">Leonard</li>
+                <li class="nav-child-content">Aldridge</li>
+                <li class="nav-child-content">Parker</li>
+            </ul>
+        </li>
+        <li class="nav-menu"><a href="http://baike.baidu.com/item/%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0%E9%AA%91%E5%A3%AB%E9%98%9F/3298080?fromtitle=%E5%85%8B%E9%87%8C%E5%A4%AB%E5%85%B0%E9%AA%91%E5%A3%AB%E9%98%9F&fromid=8711057">Cavaliers</a>
+            <ul class="nav-child">
+                <li class="nav-child-content">James</li>
+                <li class="nav-child-content">Irving</li>
+                <li class="nav-child-content">Love</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
