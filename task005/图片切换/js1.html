@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PictureSwitch</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-image: url('bw-bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .img-box{
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        .img-box img{
+            width: 300px;
+            margin-left:20%;
+            margin-top: 20%;
+        }
+        .btn-box{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+        }
+        button{
+            width: 200px;
+            height: 45px;
+            margin-left: 15%;
+            border: none;
+            font-size: 2em;
+            text-align: center;
+            border-radius: 6px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #xx{
+            position: absolute;
+            top:%50;
+            background-image: url('btn-gray.png');
+            color: #000;
+        }
+        #bw{
+            position: absolute;
+            top: 50%;
+            background-image: url('btn-blue.png');
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="img-box">
+    <img id="img" src="bw.png">
+</div>
+<div class="btn-box">
+    <button id="xx">小新</button>
+    <button id="bw">巴卫</button>
+</div>
+
+<script type="text/javascript">
+    var btn1 = document.getElementById("xx");
+    var btn2 = document.getElementById("bw");
+    var img = document.getElementById("img");
+
+    btn1.onclick = function(){
+        img.style.top = "25%";
+        img.style.left = "20%";
+        img.setAttribute("src",'xx.png');
+        img.style.width = "250px";
+        document.body.style.backgroundImage = "url('xx-bg.png')";
+        btn1.style.color = "#000";
+        btn2.style.color = "#31708f";
+        btn1.style.backgroundImage = "url('btn-blue.png')";
+        btn2.style.backgroundImage = "url('btn-gray.png')";
+    }
+
+    btn2.onclick = function(){
+        img.setAttribute("src",'bw.png');
+        img.style.width = "300px";
+        img.style.top = "20%";
+        img.style.left = "20%";
+        document.body.style.backgroundImage = "url('bw-bg.png')";
+        btn2.style.color = "#000";
+        btn1.style.color ="#31708f";
+        btn2.style.backgroundImage = "url('btn-blue.png')";
+        btn1.style.backgroundImage = "url('btn-gray.png')";
+    }
+
+</script>
+</body>
+</html>
